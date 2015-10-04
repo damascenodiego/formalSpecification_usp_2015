@@ -28,25 +28,28 @@ error  := (state = s2) | (state = s3);
 
 -------------------------------
 -- 1 EXPRESSAO CONVERTIDA:
+---- ORIGINAL -> 	AG( start -> AF heat )
+-- CTLSPEC NAME expr01 			:= AG( start -> AF heat );
 
--- ORIGINAL -> AG( start => AF heat )
--- TRADUÇÃO : SEMPRE QUE O MICROONDAS ESTIVER NO ESTADO 'START', EM ALGUM MOMENTO DO FUTURO ELE PODERÁ AQUECER (HEAT).
--- EF !(!start | ! (EG !heat)) | ! E[TRUE U (!start | !(EG !heat))]
-
+---- TRADUÇÃO : SEMPRE QUE O MICROONDAS ESTIVER NO ESTADO 'START', EM ALGUM MOMENTO DO FUTURO ELE PODERÁ AQUECER (HEAT).
+---- EF !(!start | ! (EG !heat)) | ! E[TRUE U (!start | !(EG !heat))]
+-- CTLSPEC NAME expr01_simpl	:= EF !(!start | ! (EG !heat)) | ! E[TRUE U (!start | !(EG !heat))]
 -------------------------------
 
 -- 2 EXPRESSAO CONVERTIDA:
 -- ORIGINAL -> A[!heat U closed]
+-- CTLSPEC NAME expr02 			:= A[!heat U closed]; 
+
 -- TRADUÇÃO : O MICROONDAS SEMPRE ESTARÁ OU FECHADOU OU NÃO ESTARÁ QUENTE
 -- !E[!closed U !(!heat | closed )] | (EG(!closed ))
-
 -------------------------------
 
 -- 3 EXPRESSAO CONVERDIDA:
--- ORIGINAL -> AG( error => AF !error )
+-- ORIGINAL -> AG( error -> AF !error )
+-- CTLSPEC NAME expr03 			:= AG( error -> AF !error ); 
+
 -- TRADUÇÃO: SEMPRE QUE HOUVER UM ERRO (ERROR), EM ALGUM MOMENTO NO FUTURO O ERRO DEIXARÁ DE EXISTIR (!ERROR)
 -- EF !(!error | ! (EG error)) | ! E[TRUE U (!error | !(EG error))]
-
 -------------------------------
 
 -- 4 EXPRESSAO (NOVA):
