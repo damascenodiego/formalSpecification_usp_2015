@@ -32,11 +32,11 @@ error  := (state = s2) | (state = s3);
 
 ---- TRADUÇÃO : SEMPRE QUE O MICROONDAS ESTIVER NO ESTADO 'START', EM ALGUM MOMENTO DO FUTURO ELE PODERÁ AQUECER (HEAT).
 
----- !EF !( !start | heat)
+---- !EF !( !start | ! EG !heat)
 
 -- ou 
 
----- !E[TRUE U !(!start | heat)]
+---- !E[TRUE U !(!start | !EG !heat)]
 --------------------------------
 
 
