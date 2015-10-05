@@ -59,16 +59,15 @@ error  := (state = s2) | (state = s3);
 -- !EF !(!error | !EG(error))
 -------------------------------
 
--- 4 EXPRESSAO (NOVA): 
--- CTLSPEC NAME expr := !AG(start & closed & heat & error)
--- TRADUÇÃO: Não existe um caminho global em que as propriedades start, closed, heat e error sejam validas 
+-- 4 EXPRESSAO (NOVA):
+-- AG(heat -> EF!heat)
+-- TRADUÇÃO: 
  
 -- 5 EXPRESSAO (NOVA):
--- CTLSPEC NAME expr := EF(E[error U (closed & heat)])
--- TRADUÇÃO: No futuro existe um caminho que a propriedade error será valida até que as propriedades closed e heat sejam validas
+-- 
+-- TRADUÇÃO: 
  
 -- 6 EXPRESSAO (NOVA):
--- -- CTLSPEC NAME expr := AG(heat -> EF!heat)
--- TRADUÇÃO: Para todos os caminhos, se o microondas esquenta (heat), então existe um caminho no futuro em que ele não irá esquentar (!heat) 
+-- 
+-- TRADUÇÃO: 
  
-
