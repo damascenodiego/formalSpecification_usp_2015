@@ -60,5 +60,5 @@ error  := (state = s2) | (state = s3);
 -------------------------------
 
 -- 4 EXPRESSAO (NOVA):
--- EF(AG(heat & closed))
+CTLSPEC NAME expr := EF(AG(heat & closed))
 -- EF( !(!EF !(heat & closed)) | !E[TRUE U !(heat & closed)]) 
