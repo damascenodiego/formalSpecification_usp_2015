@@ -60,7 +60,7 @@ error  := (state = s2) | (state = s3);
 -------------------------------
 
 -- 4 EXPRESSAO (NOVA):
--- 
+-- AG(heat -> EF!heat)
 -- TRADUÇÃO: 
  
 -- 5 EXPRESSAO (NOVA):
