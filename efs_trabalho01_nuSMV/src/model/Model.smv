@@ -55,3 +55,22 @@ error  := (state = s2) | (state = s3);
 -- 4 EXPRESSAO (NOVA):
 -- EF(AG(heat & closed))
 -- EF( !(!EF !(heat & closed)) | !E[TRUE U !(heat & closed)]) 
+
+
+-- Expressão:AG (p)
+
+-- Definindo p: p = start -> AF heat
+
+-- Expressão original: AG( start -> AF heat )
+
+-- Tirando a implicação de p: p = ! start | heat
+
+-- Nova original: AG( ! start | heat)
+
+-- Removendo AG:  ! EF ! p -> ! EU (true, p)
+
+-- Removendo AG2: ! EF ! ! p | EU (true, p)
+
+-- Removendo AG3: ! EF p | EU (true, p)
+
+-- Colocando P no final: !EF (!start | heat) | E[TRUE U (!start | heat)]
