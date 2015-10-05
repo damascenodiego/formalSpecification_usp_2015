@@ -9,7 +9,7 @@ ASSIGN
 
 			state = s1 : {s2, s4};
 			state = s2 : s3;
-			state = s3 : {s2, s4};
+			state = s3 : {s4};
 			state = s4 : {s1, s6};
 			state = s5 : {s1, s4, s5};
 			state = s6 : s7;
@@ -19,7 +19,7 @@ ASSIGN
 
 DEFINE
 
-start  := (state = s2) | (state = s3) | (state = s6) | (state = s7);
+start  := (state = s6) | (state = s7);
 closed := (state = s3) | (state = s4) | (state = s5) | (state = s6) | (state = s7);
 heat   := (state = s5) | (state = s7);
 error  := (state = s2) | (state = s3);
