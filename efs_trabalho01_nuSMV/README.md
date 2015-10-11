@@ -15,6 +15,6 @@ O modelo produzido foi desenvolvido para ser testado no model checker *NuSMV-zch
 
 Duvidas, e-mails e ou comentários:
 
-stevao@icmc.usp.br / damasceno@icmc.usp.br
+stevao@icmc.usp.br / damascenodiego@usp.br
 
 Todos os direitos reservados :D
