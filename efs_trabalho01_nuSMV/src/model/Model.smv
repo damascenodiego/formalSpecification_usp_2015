@@ -46,7 +46,7 @@ error  := (state = s2) | (state = s3);
 -- ORIGINAL -> A[!heat U closed]
 
 
--- TRADUÇÃO : O MICROONDAS SEMPRE ESTARÁ OU FECHADOU OU NÃO ESTARÁ QUENTE
+-- TRADUÇÃO : O MICROONDAS SEMPRE NÃO AQUECERÁ ( ! HEAT ) ATÉ QUE ESTEJA FECHADO (CLOSE).
 -- !(E [(!closed) U (!(!heat | closed))] | (EG (!closed)))
 --------------------------------
 
