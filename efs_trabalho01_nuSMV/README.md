@@ -5,7 +5,7 @@ Este diretório contém o material desenvolvido pelos alunos Carlos Damasceno e 
 
 O arquivo Relatório [Trabalho1-EFS.pdf](/efs_trabalho01_nuSMV/Relatório Trabalho1-EFS.pdf) contém um relatorio contendo a descrição e os passos realizados para a conclusão da atividade.
 
-O modelo correspondente à maquina de estados do microondas (Model.smv) encontra-se dentro do diretorio: src/model. 
+O modelo correspondente à maquina de estados do microondas ([Model.smv](/efs_trabalho01_nuSMV/src/model/Model.smv)) encontra-se dentro do diretorio: src/model. 
 
 A imagem correspondente à máquina pode ser vista no arquivo machine.png.
 
