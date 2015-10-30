@@ -13,13 +13,17 @@ public class Q02_GCD {
 
 	}
 
-	private static int gcd(int a, int b, int c) {
+	public static int gcd(int a, int b, int c) {
 		return gcd(a,gcd(b,c));
 	}
 
-	private static int gcd(int a, int b) {
-		if(b==0) return a;
-		else return gcd(b, a % b);
+	public static int gcd(int a, int b) {
+		if(b==0) {
+			return a;
+		}
+		else {
+			return gcd(b, a % b);
+		}
 	}
 
 }
